@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>dive</id>
+    <title>Dive</title>
+    <version>0.7.2</version>
+    <authors>Alex Goodman</authors>
+    <owners>Marcin Bojko</owners>
+    <summary>A tool for exploring a docker image, layer contents, and discovering ways to shrink your Docker image size.</summary>
+    <description>
+# Dive
+
+## Description
+
+A tool for exploring a docker image, layer contents, and discovering ways to shrink your Docker image size - [https://github.com/wagoodman/dive](https://github.com/wagoodman/dive)
+
+## Features
+
+* Install and uninstall via Chocolatey
+* Supports 64-bit version
+
+## Changelog
+
+### 2019-05-16 Build 0.7.2
+
+* version 0.7.2
+* 64-bit version - [https://www.virustotal.com/#/file/16388360124bdbd55d67cf8fe129b93aa2ae7d220c9fd986cb5c655cb42d3dc6/detection](https://www.virustotal.com/#/file/16388360124bdbd55d67cf8fe129b93aa2ae7d220c9fd986cb5c655cb42d3dc6/detection)
+
+## Usage
+
+### Direct
+
+```
+choco install dive -y
+```
+
+### YAML (Foreman, puppetlabs/chocolatey module)
+
+```
+dive:
+  ensure: latest
+  provider: chocolatey
+```
+
+or
+
+```
+dive:
+  ensure: latest
+```
+    </description>
+    <projectUrl>https://github.com/wagoodman/dive</projectUrl>
+    <packageSourceUrl>https://github.com/marcinbojko/dive</packageSourceUrl>
+    <docsUrl>https://github.com/wagoodman/dive</docsUrl>
+    <iconUrl>https://raw.githubusercontent.com/marcinbojko/dive/master/icons/dive.png</iconUrl>
+    <projectSourceUrl>https://github.com/wagoodman/dive</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/wagoodman/dive/issues</bugTrackerUrl>
+    <tags>dive docker image admin</tags>
+    <copyright>Alex Goodman</copyright>
+    <licenseUrl>https://github.com/wagoodman/dive/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>https://github.com/wagoodman/dive/releases</releaseNotes>
+    <dependencies>
+    </dependencies>
+  </metadata>
+    <files>
+      <file src="tools\**" target="tools" />
+      <file src="icons\**" target="icons" />
+    </files>
+</package>
