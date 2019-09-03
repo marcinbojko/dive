@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>dive</id>
     <title>Dive</title>
-    <version>0.7.2</version>
+    <version>0.8.0</version>
     <authors>Alex Goodman</authors>
     <owners>Marcin Bojko</owners>
     <summary>A tool for exploring a docker image, layer contents, and discovering ways to shrink your Docker image size.</summary>
@@ -22,6 +22,11 @@ A tool for exploring a docker image, layer contents, and discovering ways to shr
 * Supports 64-bit version
 
 ## Changelog
+
+### 2019-09-03 Build 0.8.0
+
+* version 0.8.0
+* 64-bit version [https://www.virustotal.com/gui/file/c17991d1af68bb2d2d74071cc03146be8d0a3454fdafd2562f1551111650dc61/detection](https://www.virustotal.com/gui/file/c17991d1af68bb2d2d74071cc03146be8d0a3454fdafd2562f1551111650dc61/detection)
 
 ### 2019-05-16 Build 0.7.2
 
@@ -54,7 +59,7 @@ dive:
     <projectUrl>https://github.com/wagoodman/dive</projectUrl>
     <packageSourceUrl>https://github.com/marcinbojko/dive</packageSourceUrl>
     <docsUrl>https://github.com/wagoodman/dive</docsUrl>
-    <iconUrl>https://raw.githubusercontent.com/marcinbojko/dive/master/icons/dive.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/marcinbojko/dive/606e970ab527df05608823d51c958c3a62f0993b/icons/dive.png</iconUrl>
     <projectSourceUrl>https://github.com/wagoodman/dive</projectSourceUrl>
     <bugTrackerUrl>https://github.com/wagoodman/dive/issues</bugTrackerUrl>
     <tags>dive docker image admin</tags>
@@ -67,6 +72,5 @@ dive:
   </metadata>
     <files>
       <file src="tools\**" target="tools" />
-      <file src="icons\**" target="icons" />
     </files>
 </package>
