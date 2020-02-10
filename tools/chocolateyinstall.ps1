@@ -1,15 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName        = 'dive'
-$version            = '0.9.1'
+$version            = '0.9.2'
 $url64              = "https://github.com/wagoodman/dive/releases/download/v"+$version+"/dive_"+$version+"_windows_amd64.zip"
-$checksum64         = "33554caf4418b69b22366db4d8214b6c4be3d8944121e9839a0bc5190980c920"
+$checksum64         = "4e8e48263077f94fccfb1f1c385a95640ef3c7a48fd8ca41cc7e5889ba82da28"
 $killexec           = 1
 $killexecprocess    = "dive*"
 
 $packageArgs = @{
   packageName   = $packageName
-  fileType      = 'msi'
   url64bit      = $url64
   UnzipLocation = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
   checksumType64= 'sha256'
@@ -21,8 +20,10 @@ if ($killexec) {
   try {
     Write-Output "Killing all instances of: "$killexecprocess
     Stop-Process -processname $killexecprocess -force }
-  catch {}
+  catch {
+  }
 }
 Start-Sleep -s 3
 
 Install-ChocolateyZipPackage @packageArgs
+

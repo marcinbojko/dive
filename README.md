@@ -11,6 +11,11 @@ A tool for exploring a docker image, layer contents, and discovering ways to shr
 
 ## Changelog
 
+### 2020-02-10 Build 0.9.2
+
+* version 0.9.2
+* 64-bit version [https://www.virustotal.com/gui/file/4e8e48263077f94fccfb1f1c385a95640ef3c7a48fd8ca41cc7e5889ba82da28/detection](https://www.virustotal.com/gui/file/4e8e48263077f94fccfb1f1c385a95640ef3c7a48fd8ca41cc7e5889ba82da28/detection)
+
 ### 2019-11-11 Build 0.9.1
 
 * version 0.9.1
