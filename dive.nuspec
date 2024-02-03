@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>dive</id>
     <title>Dive</title>
-    <version>0.11.0</version>
+    <version>0.12.0</version>
     <authors>Alex Goodman</authors>
     <owners>Marcin Bojko</owners>
     <summary>A tool for exploring a docker image, layer contents, and discovering ways to shrink your Docker image size.</summary>
