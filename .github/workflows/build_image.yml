@@ -1,0 +1,35 @@
+name: Build and Push Chocolatey Package
+# Start
+on:
+  push:
+    branches: [main, master, test]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch: # Allows manual triggering
+
+permissions:
+  contents: write
+  pull-requests: write
+  packages: write
+  actions: read
+  deployments: read
+  id-token: write
+  issues: write
+  discussions: read
+  pages: read
+  repository-projects: read
+  security-events: read
+  attestations: read # Added this
+  checks: write # Added this
+  statuses: write # Added
+
+jobs:
+  build-and-push:
+    uses: marcinbojko/reusable-workflows/.github/workflows/chocolatey_build_and_push.yml@main
+    with:
+      package_name: "dive" # Replace with your package name
+      package_source_main: "https://push.chocolatey.org/"
+      package_source_test: "https://www.myget.org/F/public-choco-dev/api/v2/package"
+    secrets:
+      CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+      MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}

@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName        = 'dive'
-$version            = '0.12.0'
-$url64              = "https://github.com/wagoodman/dive/releases/download/v"+$version+"/dive_"+$version+"_windows_amd64.zip"
-$checksum64         = 'b60d750852543e5a4b38c42590e2036aa2a8026cdb14d835090399f5e1312192'
+$version            = '0.13.0'
+$url64              = "https://github.com/wagoodman/dive/releases/download/v${version}/dive_${version}_windows_amd64.zip"
+$checksum64         = 'acaeaff808b5afcaaa86d024a20b85e3dfc43944faa7e1046587ebc5a5b1b912'
 $killexec           = 1
 $killexecprocess    = "dive*"
 
@@ -21,6 +21,7 @@ if ($killexec) {
     Write-Output "Killing all instances of: "$killexecprocess
     Stop-Process -processname $killexecprocess -force }
   catch {
+    Write-Error "Failed to kill process: "$killexecprocess
   }
 }
 Start-Sleep -s 3

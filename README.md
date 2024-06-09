@@ -17,8 +17,8 @@ A tool for exploring a docker image, layer contents, and discovering ways to shr
 
 ## Features
 
-* Install and uninstall via Chocolatey
-* Supports 64-bit version
+- Install and uninstall via Chocolatey
+- Supports 64-bit version
 
 ## Usage
 
