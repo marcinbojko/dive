@@ -1,7 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName        = 'dive'
-$url64              = "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_windows_amd64.zip"
+$version            = '0.12.0'
+$url64              = "https://github.com/wagoodman/dive/releases/download/v$version/dive_$version_windows_amd64.zip"
 $checksum64         = 'b60d750852543e5a4b38c42590e2036aa2a8026cdb14d835090399f5e1312192'
 $killexec           = 1
 $killexecprocess    = "dive*"
